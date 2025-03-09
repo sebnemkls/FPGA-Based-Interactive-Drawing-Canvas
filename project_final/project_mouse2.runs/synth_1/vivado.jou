@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Tue Dec 17 13:24:21 2024
+# Process ID: 22656
+# Current directory: C:/Users/sebne/project_mouse2/project_mouse2.runs/synth_1
+# Command line: vivado.exe -log draw.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source draw.tcl
+# Log file: C:/Users/sebne/project_mouse2/project_mouse2.runs/synth_1/draw.vds
+# Journal file: C:/Users/sebne/project_mouse2/project_mouse2.runs/synth_1\vivado.jou
+# Running On        :LAPTOP-FVEABP65
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz
+# CPU Frequency     :2803 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :16885 MB
+# Swap memory       :51499 MB
+# Total Virtual     :68384 MB
+# Available Virtual :40247 MB
+#-----------------------------------------------------------
+source draw.tcl -notrace

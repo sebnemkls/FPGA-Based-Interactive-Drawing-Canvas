@@ -1,0 +1,48 @@
+# Clock signal 
+set_property PACKAGE_PIN W5 [get_ports clk_100MHz]  	 	 	 	  
+ 	set_property IOSTANDARD LVCMOS33 [get_ports clk_100MHz] 
+# Switches 
+set_property PACKAGE_PIN V17 [get_ports {color[0]}] 	 
+set_property IOSTANDARD LVCMOS33 [get_ports {color[0]}] 
+set_property PACKAGE_PIN V16 [get_ports {color[1]}] 	 
+set_property IOSTANDARD LVCMOS33 [get_ports {color[1]}] 
+set_property PACKAGE_PIN W16 [get_ports {color[2]}] 	 	 
+set_property IOSTANDARD LVCMOS33 [get_ports {color[2]}] 
+set_property PACKAGE_PIN W17 [get_ports {color[3]}] 	 	 
+set_property IOSTANDARD LVCMOS33 [get_ports {color[3]}] 
+set_property PACKAGE_PIN W15 [get_ports {color[4]}] 	 	 
+set_property IOSTANDARD LVCMOS33 [get_ports {color[4]}] 
+set_property PACKAGE_PIN V15 [get_ports {color[5]}] 	 	 
+set_property IOSTANDARD LVCMOS33 [get_ports {color[5]}] 
+set_property PACKAGE_PIN W14 [get_ports {color[6]}] 	 	 
+set_property IOSTANDARD LVCMOS33 [get_ports {color[6]}] 
+set_property PACKAGE_PIN W13 [get_ports {color[7]}] 	 	 
+set_property IOSTANDARD LVCMOS33 [get_ports {color[7]}] 
+ 
+set_property PACKAGE_PIN T1 [get_ports {brush}] 	 
+set_property IOSTANDARD LVCMOS33 [get_ports {brush}] 
+set_property PACKAGE_PIN R2 [get_ports {reset}] 	 	 
+set_property IOSTANDARD LVCMOS33 [get_ports {reset}] 
+ 
+##VGA Connector
+set_property PACKAGE_PIN N19     [get_ports {rgb[0]}]				
+set_property IOSTANDARD LVCMOS33 [get_ports {rgb[0]}]
+set_property PACKAGE_PIN D17     [get_ports {rgb[1]}]				
+set_property IOSTANDARD LVCMOS33 [get_ports {rgb[1]}]
+set_property PACKAGE_PIN J18     [get_ports {rgb[2]}]				
+set_property IOSTANDARD LVCMOS33 [get_ports {rgb[2]}]
+set_property PACKAGE_PIN P19     [get_ports hsync]						
+set_property IOSTANDARD LVCMOS33 [get_ports hsync]
+set_property PACKAGE_PIN R19     [get_ports vsync]						
+set_property IOSTANDARD LVCMOS33 [get_ports vsync]
+
+
+set_property PACKAGE_PIN C17 [get_ports ps2_clk]
+	set_property IOSTANDARD LVCMOS33 [get_ports ps2_clk]
+	set_property PULLUP true [get_ports ps2_clk]
+set_property PACKAGE_PIN B17 [get_ports ps2_dat]
+	set_property IOSTANDARD LVCMOS33 [get_ports ps2_dat]
+	set_property PULLUP true [get_ports ps2_dat]
+
+set_property CFGBVS VCCO [current_design]
+set_property CONFIG_VOLTAGE 3.3 [current_design]

@@ -1,0 +1,87 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Tue Dec 17 13:30:02 2024
+| Host         : LAPTOP-FVEABP65 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file draw_control_sets_placed.rpt
+| Design       : draw
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |     9 |
+|    Minimum number of control sets                        |     9 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    30 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |     9 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     3 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     4 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              16 |           11 |
+| No           | No                    | Yes                    |              36 |           22 |
+| No           | Yes                   | No                     |              15 |            7 |
+| Yes          | No                    | No                     |              25 |           18 |
+| Yes          | No                    | Yes                    |              10 |            5 |
+| Yes          | Yes                   | No                     |              28 |            8 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------+----------------------------+----------------------------+------------------+----------------+--------------+
+|      Clock Signal     |        Enable Signal       |      Set/Reset Signal      | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------------+----------------------------+----------------------------+------------------+----------------+--------------+
+|  clk_100MHz_IBUF_BUFG | ps2_sig/counter            | reset_IBUF                 |                2 |              6 |         3.00 |
+|  vga_ctrl/w_25MHz     |                            | reset_IBUF                 |                6 |             10 |         1.67 |
+|  vga_ctrl/w_25MHz     | vga_ctrl/v_count_next_1    | reset_IBUF                 |                5 |             10 |         2.00 |
+|  clk_100MHz_IBUF_BUFG | ps2_sig/buffer[43]_i_2_n_0 |                            |                2 |             10 |         5.00 |
+|  clk_100MHz_IBUF_BUFG |                            | ps2_sig/fifo0              |                5 |             13 |         2.60 |
+|  clk_100MHz_IBUF_BUFG |                            |                            |               11 |             16 |         1.45 |
+|  clk_100MHz_IBUF_BUFG | ps2_sig/E[0]               |                            |               16 |             20 |         1.25 |
+|  clk_100MHz_IBUF_BUFG | ps2_sig/buffer[43]_i_2_n_0 | ps2_sig/buffer[43]_i_1_n_0 |                6 |             22 |         3.67 |
+|  clk_100MHz_IBUF_BUFG |                            | reset_IBUF                 |               18 |             28 |         1.56 |
++-----------------------+----------------------------+----------------------------+------------------+----------------+--------------+
+
+
